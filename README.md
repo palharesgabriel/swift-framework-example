@@ -1,2 +1,3 @@
-# swift-framework-example
-Creating an example iOS framework for learning purposes.
+# SwiftFrameworkExample
+
+A description of this package.
