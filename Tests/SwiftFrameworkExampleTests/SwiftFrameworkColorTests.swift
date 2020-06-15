@@ -1,21 +1,21 @@
 import XCTest
 @testable import SwiftFrameworkExample
 
-final class SwiftFrameworkExampleTests: XCTestCase {
+final class SwiftFrameworkColorTests: XCTestCase {
     
     func testColorRedEqual() {
-        let color = SwiftFrameworkExample.color(from: "FF0000")
+        let color = SwiftFramework.Color.fromHexString("FF0000")
         XCTAssertEqual(color, .red)
     }
     
     func testFrameworkColorsAreEqual() {
-        let color = SwiftFrameworkExample.color(from: "006736")
-        XCTAssertEqual(color, SwiftFrameworkExample.frameworkColor)
+        let color = SwiftFramework.Color.fromHexString("006736")
+        XCTAssertEqual(color, SwiftFramework.Color.frameworkColor)
     }
     
     func testSecondaryFrameworkColorAreEqual() {
-        let color = SwiftFrameworkExample.color(from: "FCFFFD")
-        XCTAssertEqual(color, SwiftFrameworkExample.secondaryColor)
+        let color = SwiftFramework.Color.fromHexString("FCFFFD")
+        XCTAssertEqual(color, SwiftFramework.Color.secondaryColor)
     }
 
     static var allTests = [
