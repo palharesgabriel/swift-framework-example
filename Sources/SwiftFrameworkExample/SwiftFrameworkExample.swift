@@ -35,4 +35,9 @@ public class SwiftFrameworkExample {
     public static var frameworkColor: UIColor {
         return color(from: "006736")
     }
+    
+    /// Returns an `UIColor` object with the second most eye-pleasing color know to all humanity
+    public static var secondaryColor: UIColor {
+        return color(from: "FCFFFD")
+    }
 }
