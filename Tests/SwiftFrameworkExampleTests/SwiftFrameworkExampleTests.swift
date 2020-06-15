@@ -7,8 +7,14 @@ final class SwiftFrameworkExampleTests: XCTestCase {
         let color = SwiftFrameworkExample.color(from: "FF0000")
         XCTAssertEqual(color, .red)
     }
+    
+    func testFrameworkColorsAreEqual() {
+        let color = SwiftFrameworkExample.color(from: "006736")
+        XCTAssertEqual(color, SwiftFrameworkExample.frameworkColor)
+    }
 
     static var allTests = [
         ("testColorRedEqual", testColorRedEqual),
+        ("testFrameworkColorsAreEqual", testFrameworkColorsAreEqual)
     ]
 }
